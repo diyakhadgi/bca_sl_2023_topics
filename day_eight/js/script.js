@@ -69,3 +69,24 @@ console.log(d5)
 console.log(d6)
 console.log(d7)
 
+// we can also pass hours, win and sec
+const d8 = new Date("2023","12","24","12","25","58")
+console.log(d8)
+
+// we can also create js object using new Keyword
+// example 
+// defining Place
+
+function Place(pName,pType,code) {
+    // here "this" keyword is use to indicate poroperties of Place
+    this.placeName = pName
+    this.placeType = pType
+    this.zipCode = code
+}
+// creating Place object
+const place = new Place("Kathmandu","Capital",44600) // passing alues
+console.log(place)
+console.log("Name: " +place.placeName)
+console.log("Type: " + place.placeType)
+console.log("Zip Code: " + place.zipCode)
+
